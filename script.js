@@ -1,13 +1,18 @@
 // CONFIG
-const PHONE = '5561982040129';
+const PHONE = '5574981462276';
 
 // FRETE POR BAIRRO
 const bairros = {
-  "Pad-DF": 17,
-  "Lamarao": 14,
-  "Alfavile": 10,
-  "Marajo": 15,
-  "Capao Seco": 5
+  "Poços": 0,
+  "Bela Vista": 3,
+  "Caraiba": 8,
+  "Mulungu": 8,
+  "Torrões": 10,
+  "Brejo grande": 10,
+  "Lagoa rasa": 10,
+  "Alfavile": 15,
+  "Papagaio": 13,
+  "Campo formoso": 13
 };
 
 // STATE
@@ -262,20 +267,33 @@ function finalizarPedido() {
   const frete = getFrete();
   const tempo = getTempoEntrega(bairro);
 
+
+  const now = new Date();
+
+  const dia = String(now.getDate()).padStart(2, '0');
+  const mes = String(now.getMonth() + 1).padStart(2, '0');
+  const ano = now.getFullYear();
+
+  const hora = String(now.getHours()).padStart(2, '0');
+  const minuto = String(now.getMinutes()).padStart(2, '0');
+
+  const dataHora = `${dia}/${mes}/${ano} às ${hora}:${minuto}`;
+
   // MENSAGEM
   const message =
-    `📋 *NOVO PEDIDO*\n\n` +
-    `📦 *Itens:*\n${itens}\n` +
-    `💳 *Pagamento:* ${selectedPayment}\n` +
-    (selectedPayment === 'Dinheiro'
-      ? `💰 Troco para: R$ ${troco}\n`
-      : '') +
-    `\n🚚 *Frete:* R$ ${frete.toFixed(2)}\n` +
-    `⏱ *Tempo estimado:* ${tempo}\n` +
-    `🗺 *Bairro:* ${bairro}\n` +
-    `📍 *Endereço:* ${address}\n\n` +
-    `💵 *Total:* R$ ${(total + frete).toFixed(2)}\n` +
-    `👤 *Nome:* ${name}`;
+  `📋 *NOVO PEDIDO*\n` +
+  `🕒 Pedido feito em: ${dataHora}\n\n` + // 👈 AQUI
+  `📦 *Itens:*\n${itens}\n` +
+  `💳 *Pagamento:* ${selectedPayment}\n` +
+  (selectedPayment === 'Dinheiro'
+    ? `💰 Troco para: R$ ${troco}\n`
+    : '') +
+  `\n🚚 *Frete:* R$ ${frete.toFixed(2)}\n` +
+  // `⏱ *Tempo estimado:* ${tempo}\n` +
+  `🗺 *Bairro:* ${bairro}\n` +
+  `📍 *Endereço:* ${address}\n\n` +
+  `💵 *Total:* R$ ${(total + frete).toFixed(2)}\n` +
+  `👤 *Nome:* ${name}`;
 
   const encodedMessage = encodeURIComponent(message);
 
