@@ -376,16 +376,28 @@ function checkNavOverflow() {
 }
 
 // INIT
+// window.addEventListener('load', () => {
+//   loadBairros();
+//   checkNavOverflow();
+//   updateCart();
+
+//   // RESTAURA QTD
+//   Object.entries(cart).forEach(([item, { qty }]) => {
+//     const el = document.getElementById(`qty-${formatId(item)}`);
+//     if (el) el.innerText = qty;
+//   });
+// });
+
 window.addEventListener('load', () => {
+
+  // 🔥 LIMPA CARRINHO AO ABRIR
+  cart = {};
+  localStorage.removeItem('cart');
+
   loadBairros();
   checkNavOverflow();
   updateCart();
 
-  // RESTAURA QTD
-  Object.entries(cart).forEach(([item, { qty }]) => {
-    const el = document.getElementById(`qty-${formatId(item)}`);
-    if (el) el.innerText = qty;
-  });
 });
 
 window.addEventListener('resize', checkNavOverflow);
