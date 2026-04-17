@@ -137,8 +137,16 @@ function updateCart() {
 
   // 🔥 ATUALIZA FRETE VISUAL
   const freteEl = document.getElementById('freteValue');
+  const select = document.getElementById('bairroSelect');
+
   if (freteEl) {
-    freteEl.innerText = frete > 0 ? `R$ ${frete.toFixed(2)}` : 'a consultar';
+    if (!select || !select.value) {
+      freteEl.innerText = 'a consultar';
+    } else if (frete === 0) {
+      freteEl.innerText = 'Grátis 🎉';
+    } else {
+      freteEl.innerText = `R$ ${frete.toFixed(2)}`;
+    }
   }
 
   // 🔥 TOTAL LIMPO (como você queria)
@@ -333,18 +341,19 @@ function finalizarPedido() {
 // STATUS LOJA
 function isOpen() {
   const hour = new Date().getHours();
-  return hour >= 17 && hour <= 23; // 🔥 corrigido
+  return hour >= 17 && hour <= 23; 
 }
 
 const status = document.getElementById('storeStatus');
 if (status) {
   if (isOpen()) {
     status.innerText = '🟢 Aberto agora';
-    status.style.color = 'lightgreen';
+    status.style.color = '#2ecc71';
   } else {
     status.innerText = '🔴 Fechado agora';
-    status.style.color = 'red';
+    status.style.color = '#e74c3c';
   }
+  
 }
 
 // NAV OVERFLOW

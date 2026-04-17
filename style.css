@@ -1,6 +1,6 @@
 :root {
-  --primary: #5C1F12; /* marrom escuro */
-  --accent: #D35400; /* laranja/vermelho da logo */
+  --primary: #5C1F12; 
+  --accent: #D35400; 
   --bg: #f7f7f7;
 }
 
@@ -19,7 +19,9 @@ header {
   background: linear-gradient(135deg, #8B2E1E, #C1440E);
   color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
 }
 
 header p {
@@ -38,8 +40,8 @@ header p {
   height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid white; /* 🔥 destaque */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* 🔥 profundidade */
+  border: 3px solid white; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
   max-width: 80%;
   margin-bottom: 8px;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
@@ -92,7 +94,7 @@ header p {
 
 .menu {
   padding-top: 10px;
-  padding-bottom: 250px; /* espaço pro carrinho */
+  padding-bottom: 250px; 
 }
 
 
@@ -182,7 +184,7 @@ header p {
   display: flex;
   flex-direction: column;
 
-  max-height: 40vh; /* 🔥 acompanha o pai */
+  max-height: 40vh; 
 }
 
 input, textarea {
@@ -223,7 +225,7 @@ input, textarea {
   left: 0;
   width: 100%;
 
-  height: 100%; /* 🔥 NÃO cobre o carrinho */
+  height: 100%; 
 
   background: rgba(0,0,0,0.4);
   backdrop-filter: blur(5px);
@@ -238,7 +240,7 @@ input, textarea {
   left: 0;
   width: 100%;
 
-  height: calc(100% - 40vh); /* 🔥 usa a MESMA altura do carrinho */
+  height: calc(100% - 40vh); 
 
   display: flex;
   justify-content: center;
@@ -374,4 +376,21 @@ input, textarea {
 
 .toast.error {
   background: #ff4d4f;
+}
+
+#storeStatus {
+  display: inline-block;
+  margin-top: 8px;
+
+  background: white;
+  color: #333;
+
+  padding: 6px 12px;
+  border-radius: 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
 }
