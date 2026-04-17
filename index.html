@@ -11,7 +11,7 @@
   <body>
 
     <header>
-      <h1>Podrão do Juninho</h1>
+      <img src="./Imagens/Logo parada obrigatoria.png" alt="Parada Obrigatória" class="logo">
       <p id="storeStatus"></p>
     </header>
 
@@ -39,66 +39,53 @@
 
       <div class="card">
         <div class="card-info">
-          <strong>Combo Clássico</strong>
-          <p class="desc">X-Burguer + batata + refri lata</p>
-          <p>R$ 28</p>
+          <strong>Combo X Onion</strong>
+          <p class="desc">X-Onion + Porção de Anéis de Cebola + Pepsi lata</p>
+          <p>R$ 30,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Combo Clássico', 28, -1)">-</button>
-          <span id="qty-Combo-Clássico">0</span>
-          <button onclick="updateItem('Combo Clássico', 28, 1)">+</button>
+          <button onclick="updateItem('Combo X Onion', 30, -1)">-</button>
+          <span id="qty-Combo-X-Onion">0</span>
+          <button onclick="updateItem('Combo X Onion', 30, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Combo Bacon Supreme</strong>
-          <p class="desc">X-Bacon + batata + refri 600ml</p>
-          <p>R$ 35</p>
+          <strong>Combo X Bacon</strong>
+          <p class="desc">X-Bacon + batata M + Pepsi lata</p>
+          <p>R$ 27,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Combo Bacon Supreme', 35, -1)">-</button>
-          <span id="qty-Combo-Bacon-Supreme">0</span>
-          <button onclick="updateItem('Combo Bacon Supreme', 35, 1)">+</button>
+          <button onclick="updateItem('Combo X Bacon', 27.99, -1)">-</button>
+          <span id="qty-Combo-X-Bacon">0</span>
+          <button onclick="updateItem('Combo X Bacon', 27.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Combo Duplo</strong>
-          <p class="desc">2 hambúrgueres + batata grande</p>
-          <p>R$ 42</p>
+          <strong>Combo Kids</strong>
+          <p class="desc">Hambúrguer + Maça + Suco Kapo + Danoniho Morango + Docinho Surpresa</p>
+          <p>R$ 23,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Combo Duplo', 42, -1)">-</button>
-          <span id="qty-Combo-Duplo">0</span>
-          <button onclick="updateItem('Combo Duplo', 42, 1)">+</button>
+          <button onclick="updateItem('Combo Kids', 23.99, -1)">-</button>
+          <span id="qty-Combo-Kids">0</span>
+          <button onclick="updateItem('Combo Kids', 23.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Combo Família</strong>
-          <p class="desc">3 hambúrgueres + batata + 2 refris</p>
-          <p>R$ 65</p>
+          <strong>Mega Combo</strong>
+          <p class="desc">2 hambúrgueres na Pscina de Cheddar + Batata frita com Cheddar e Bacon + Anéis de Cebola + Refri de Litro + Maionese Temperada</p>
+          <p>R$ 63,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Combo Família', 65, -1)">-</button>
-          <span id="qty-Combo-Família">0</span>
-          <button onclick="updateItem('Combo Família', 65, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Combo Monstro</strong>
-          <p class="desc">X-Tudo + batata + refri + nuggets</p>
-          <p>R$ 48</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Combo Monstro', 48, -1)">-</button>
-          <span id="qty-Combo-Monstro">0</span>
-          <button onclick="updateItem('Combo Monstro', 48, 1)">+</button>
+          <button onclick="updateItem('Mega Combo', 63.99, -1)">-</button>
+          <span id="qty-Mega-Combo">0</span>
+          <button onclick="updateItem('Mega Combo', 63.99, 1)">+</button>
         </div>
       </div>
 
@@ -107,147 +94,121 @@
 
       <div class="card">
         <div class="card-info">
-          <strong>X-Burguer</strong>
-          <p class="desc">Carne, queijo e molho</p>
-          <p>R$ 15</p>
+          <strong>Nordestino</strong>
+          <p class="desc">Artesanal</p>
+          <p>R$ 21,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('X-Burguer', 15, -1)">-</button>
-          <span id="qty-X-Burguer">0</span>
-          <button onclick="updateItem('X-Burguer', 15, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>X-Salada</strong>
-          <p class="desc">Carne, queijo, alface e tomate</p>
-          <p>R$ 17</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('X-Salada', 17, -1)">-</button>
-          <span id="qty-X-Salada">0</span>
-          <button onclick="updateItem('X-Salada', 17, 1)">+</button>
+          <button onclick="updateItem('Nordestino', 21.99, -1)">-</button>
+          <span id="qty-Nordestino">0</span>
+          <button onclick="updateItem('Nordestino', 21.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
           <strong>X-Bacon</strong>
-          <p class="desc">Carne, queijo e bacon</p>
-          <p>R$ 20</p>
+          <p class="desc">Artesanal</p>
+          <p>R$ 14,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('X-Bacon', 20, -1)">-</button>
+          <button onclick="updateItem('X-Bacon', 14.99, -1)">-</button>
           <span id="qty-X-Bacon">0</span>
-          <button onclick="updateItem('X-Bacon', 20, 1)">+</button>
+          <button onclick="updateItem('X-Bacon', 14.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>X-Egg</strong>
-          <p class="desc">Carne, queijo e ovo</p>
-          <p>R$ 19</p>
+          <strong>X-Salada</strong>
+          <p class="desc">Artesanal</p>
+          <p>R$ 11,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('X-Egg', 19, -1)">-</button>
-          <span id="qty-X-Egg">0</span>
-          <button onclick="updateItem('X-Egg', 19, 1)">+</button>
+          <button onclick="updateItem('X-Salada', 11.99, -1)">-</button>
+          <span id="qty-X-Salada">0</span>
+          <button onclick="updateItem('X-Salada', 11.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>X-Calabresa</strong>
-          <p class="desc">Carne, queijo e calabresa</p>
-          <p>R$ 21</p>
+          <strong>Duplo X-Bacon</strong>
+          <p class="desc">Artesanal</p>
+          <p>R$ 21,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('X-Calabresa', 21, -1)">-</button>
-          <span id="qty-X-Calabresa">0</span>
-          <button onclick="updateItem('X-Calabresa', 21, 1)">+</button>
+          <button onclick="updateItem('Duplo X-Bacon', 21.99, -1)">-</button>
+          <span id="qty-Duplo-X-Bacon">0</span>
+          <button onclick="updateItem('Duplo X-Bacon', 21.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>X-Frango</strong>
-          <p class="desc">Frango grelhado e queijo</p>
-          <p>R$ 18</p>
+          <strong>X-Onion</strong>
+          <p class="desc">Artesanal</p>
+          <p>R$ 25,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('X-Frango', 18, -1)">-</button>
-          <span id="qty-X-Frango">0</span>
-          <button onclick="updateItem('X-Frango', 18, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>X-Tudo</strong>
-          <p class="desc">Completo com tudo</p>
-          <p>R$ 25</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('X-Tudo', 25, -1)">-</button>
-          <span id="qty-X-Tudo">0</span>
-          <button onclick="updateItem('X-Tudo', 25, 1)">+</button>
+          <button onclick="updateItem('X-Onion', 25.00, -1)">-</button>
+          <span id="qty-X-Onion">0</span>
+          <button onclick="updateItem('X-Onion', 25.00, 1)">+</button>
         </div>
       </div>
 
       <!-- BATATAS -->
-      <h2 id="batatas">🍟 Batatas</h2>
+      <h2 id="batatas">🍟 Batatas/Porções</h2>
 
       <div class="card">
         <div class="card-info">
-          <strong>Batata Pequena</strong>
-          <p class="desc">Porção individual</p>
-          <p>R$ 10</p>
+          <strong>Pscina de Cheddar</strong>
+          <!-- <p class="desc">Porção individual</p> -->
+          <p>R$ 29,99</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Batata Pequena', 10, -1)">-</button>
-          <span id="qty-Batata-Pequena">0</span>
-          <button onclick="updateItem('Batata Pequena', 10, 1)">+</button>
+          <button onclick="updateItem('Pscina de Cheddar', 29.99, -1)">-</button>
+          <span id="qty-Pscina-de-Cheddar">0</span>
+          <button onclick="updateItem('Pscina de Cheddar', 29.99, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Batata Média</strong>
-          <p class="desc">Serve até 2 pessoas</p>
-          <p>R$ 15</p>
+          <strong>Batata P</strong>
+          <!-- <p class="desc">Serve até 2 pessoas</p> -->
+          <p>R$ 8,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Batata Média', 15, -1)">-</button>
-          <span id="qty-Batata-Média">0</span>
-          <button onclick="updateItem('Batata Média', 15, 1)">+</button>
+          <button onclick="updateItem('Batata P', 8, -1)">-</button>
+          <span id="qty-Batata-P">0</span>
+          <button onclick="updateItem('Batata P', 8, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Batata Grande</strong>
-          <p class="desc">Serve até 3 pessoas</p>
-          <p>R$ 20</p>
+          <strong>Batata M</strong>
+          <!-- <p class="desc">Serve até 3 pessoas</p> -->
+          <p>R$ 10,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Batata Grande', 20, -1)">-</button>
-          <span id="qty-Batata-Grande">0</span>
-          <button onclick="updateItem('Batata Grande', 20, 1)">+</button>
+          <button onclick="updateItem('Batata M', 10, -1)">-</button>
+          <span id="qty-Batata-M">0</span>
+          <button onclick="updateItem('Batata M', 10, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Batata com Cheddar</strong>
-          <p class="desc">Coberta com cheddar e bacon</p>
-          <p>R$ 25</p>
+          <strong>Batata G</strong>
+          <p class="desc">Batata Recheada com Cheddar e Bacon</p>
+          <p>R$ 15,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Batata com Cheddar', 25, -1)">-</button>
-          <span id="qty-Batata-com-Cheddar">0</span>
-          <button onclick="updateItem('Batata com Cheddar', 25, 1)">+</button>
+          <button onclick="updateItem('Batata G', 15, -1)">-</button>
+          <span id="qty-Batata-G">0</span>
+          <button onclick="updateItem('Batata G', 15, 1)">+</button>
         </div>
       </div>
 
@@ -256,126 +217,40 @@
 
       <div class="card">
         <div class="card-info">
-          <strong>Coca-Cola Lata</strong>
-          <p>R$ 6</p>
+          <strong>Coca-Cola 1 Litro</strong>
+          <p>R$ 10,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Coca-Cola Lata', 6, -1)">-</button>
-          <span id="qty-Coca-Cola-Lata">0</span>
-          <button onclick="updateItem('Coca-Cola Lata', 6, 1)">+</button>
+          <button onclick="updateItem('Coca-Cola 1 Litro', 10, -1)">-</button>
+          <span id="qty-Coca-Cola-1-Litro">0</span>
+          <button onclick="updateItem('Coca-Cola 1 Litro', 10, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Coca-Cola 600ml</strong>
-          <p>R$ 8</p>
+          <strong>Guarana Antartica</strong>
+          <p>R$ 9,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Coca-Cola 600ml', 8, -1)">-</button>
-          <span id="qty-Coca-Cola-600ml">0</span>
-          <button onclick="updateItem('Coca-Cola 600ml', 8, 1)">+</button>
+          <button onclick="updateItem('Guarana Antartica', 9, -1)">-</button>
+          <span id="qty-Guarana-Antartica">0</span>
+          <button onclick="updateItem('Guarana Antartica', 9, 1)">+</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-info">
-          <strong>Guaraná Lata</strong>
-          <p>R$ 6</p>
+          <strong>Pepsi Lata 350ml</strong>
+          <p>R$ 5,00</p>
         </div>
         <div class="qty-control">
-          <button onclick="updateItem('Guaraná Lata', 6, -1)">-</button>
-          <span id="qty-Guaraná-Lata">0</span>
-          <button onclick="updateItem('Guaraná Lata', 6, 1)">+</button>
+          <button onclick="updateItem('Pepsi Lata 350ml', 5, -1)">-</button>
+          <span id="qty-Pepsi-Lata-350ml">0</span>
+          <button onclick="updateItem('Pepsi Lata 350ml', 5, 1)">+</button>
         </div>
       </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Guaraná 600ml</strong>
-          <p>R$ 8</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Guaraná 600ml', 8, -1)">-</button>
-          <span id="qty-Guaraná-600ml">0</span>
-          <button onclick="updateItem('Guaraná 600ml', 8, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Fanta Lata</strong>
-          <p>R$ 6</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Fanta Lata', 6, -1)">-</button>
-          <span id="qty-Fanta-Lata">0</span>
-          <button onclick="updateItem('Fanta Lata', 6, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Sprite Lata</strong>
-          <p>R$ 6</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Sprite Lata', 6, -1)">-</button>
-          <span id="qty-Sprite-Lata">0</span>
-          <button onclick="updateItem('Sprite Lata', 6, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Água Mineral</strong>
-          <p>R$ 4</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Água Mineral', 4, -1)">-</button>
-          <span id="qty-Água-Mineral">0</span>
-          <button onclick="updateItem('Água Mineral', 4, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Suco Natural</strong>
-          <p>R$ 7</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Suco Natural', 7, -1)">-</button>
-          <span id="qty-Suco-Natural">0</span>
-          <button onclick="updateItem('Suco Natural', 7, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Energético</strong>
-          <p>R$ 12</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Energético', 12, -1)">-</button>
-          <span id="qty-Energético">0</span>
-          <button onclick="updateItem('Energético', 12, 1)">+</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-info">
-          <strong>Cerveja Lata</strong>
-          <p>R$ 8</p>
-        </div>
-        <div class="qty-control">
-          <button onclick="updateItem('Cerveja Lata', 8, -1)">-</button>
-          <span id="qty-Cerveja-Lata">0</span>
-          <button onclick="updateItem('Cerveja Lata', 8, 1)">+</button>
-        </div>
-      </div>
-
-      </div>
-
+      
       <!-- CARRINHO -->
       <div class="cart">
         <div class="cart-content">

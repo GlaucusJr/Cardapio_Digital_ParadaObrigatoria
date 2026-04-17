@@ -315,7 +315,7 @@ function finalizarPedido() {
 // STATUS LOJA
 function isOpen() {
   const hour = new Date().getHours();
-  return hour >= 18 && hour <= 23; // 🔥 corrigido
+  return hour >= 17 && hour <= 23; // 🔥 corrigido
 }
 
 const status = document.getElementById('storeStatus');
